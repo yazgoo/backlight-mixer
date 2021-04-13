@@ -1,0 +1,12 @@
+[package]
+name = "backlight-mixer"
+version = "0.0.1"
+authors = ["yazgoo <yazgoo@gmail.com>"]
+edition = "2018"
+license = "MIT"
+description = "alsamixer but for screen backlight"
+readme = "README.md"
+homepage = "https://github.com/yazgoo/backlight-mixer"
+repository = "https://github.com/yazgoo/backlight-mixer"
+keywords = ["terminal"]
+categories = []
