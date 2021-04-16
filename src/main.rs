@@ -52,11 +52,11 @@ impl Backlight {
 fn main() -> Result<(), Box<dyn Error>> {
     let args: Vec<String> = env::args().collect();
     for b in list_backlights()?.iter() {
-        println!("{}", b.path);
-        println!("{}", b.get_brightness()?);
+        //println!("{}", b.path);
         if args.len() > 1 {
             b.set_brightness(args[1].parse::<Percent>()?)?;
         }
+        println!("{}", b.get_brightness()?);
     }
     Ok(())
 }
